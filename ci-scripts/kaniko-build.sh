@@ -4,10 +4,13 @@
 # to the registry if the branch is master
 
 echo "{\"auths\":{\"${CI_REGISTRY}\":{\"username\":\"${CI_REGISTRY_USER}\",\
-  \"password\":\"${CI_REGISTRY_PASSWORD}\"}}}" > /root/.docker/config.json
+  \"password\":\"${CI_REGISTRY_PASSWORD}\"}}}" > /kaniko/.docker/config.json
+
+export DOCKER_CONFIG='/kaniko/.docker'
 
 if [[ "$CI_COMMIT_REF_NAME" == "master" ]]; then
   /kaniko/executor \
+    --cleanup \
     --context "${CI_PROJECT_DIR}" \
     --dockerfile "deploy/containers/$1/Dockerfile" \
     --destination "${CI_REGISTRY_IMAGE}:$1" \
@@ -16,6 +19,7 @@ if [[ "$CI_COMMIT_REF_NAME" == "master" ]]; then
     --snapshotMode time
 else
   /kaniko/executor \
+    --cleanup \
     --context "${CI_PROJECT_DIR}" \
     --dockerfile "deploy/containers/$1/Dockerfile" \
     --no-push \
