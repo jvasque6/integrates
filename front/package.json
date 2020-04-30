@@ -26,7 +26,7 @@
     "graphql": "14.2.1",
     "graphql-tag": "2.10.1",
     "i18next": "13.1.5",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "jquery-comments_brainkit": "1.2.8",
     "lodash": "4.17.14",
     "mixpanel-browser": "2.26.0",
