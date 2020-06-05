@@ -3,7 +3,7 @@ boto3==1.9.109
 botocore==1.12.109
 codecov==2.0.15
 cryptography==2.6.1
-django==1.11.20
+django==1.11.29
 django-analytical==2.5.0
 django-crontab==0.7.1
 django-intercom==0.1.2
