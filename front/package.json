@@ -28,7 +28,7 @@
     "i18next": "13.1.5",
     "jquery": "3.4.1",
     "jquery-comments_brainkit": "1.2.8",
-    "lodash": "4.17.14",
+    "lodash": "4.17.19",
     "mixpanel-browser": "2.26.0",
     "react": "16.8.6",
     "react-apollo": "2.5.5",
