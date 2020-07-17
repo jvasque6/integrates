@@ -29,7 +29,7 @@
     "expo-permissions": "5.0.1",
     "expo-secure-store": "5.0.1",
     "i18next": "17.0.6",
-    "lodash": "4.17.14",
+    "lodash": "4.17.19",
     "react": "16.8.3",
     "react-apollo": "2.5.8",
     "react-i18next": "10.11.4",
